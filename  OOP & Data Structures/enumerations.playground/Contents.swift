@@ -27,3 +27,29 @@ for beverage in Beverage.allCases{
 }
 
 
+
+enum Directions{
+    case N
+    case S
+    case W
+    case E
+}
+
+func getDirection(on platform: Directions){
+    switch platform{
+        
+    case .N:
+        print("This is north")
+    case .S:
+        print("South")
+    case .W:
+        print("West")
+    case .E:
+        print("East")
+
+    }
+}
+
+getDirection(on: .N)
+
+
